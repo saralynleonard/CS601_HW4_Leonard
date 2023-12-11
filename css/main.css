@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    /*background: linear-gradient(#372549, #b75d69);*/
+    background: #283d3b;
+    color: #fff; 
+    height: 100vh;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    width: 50%;
+    margin-left: 25%;
+    align-self: center;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    background: rgba(255, 255, 255, .1);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+label {
+    display: flex;
+    font-size: 1.2rem;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #a8dadc;
+    background-color: transparent;
+    color:#a6dadb;
+    margin-bottom: 15px;
+    font-size: 1.15rem;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+#firstName, #lastName, #facilitator {
+    width: 100%;
+}
+
+input:focus {
+    border-bottom: 5px solid #a8dadc;
+    outline: none;
+    transition: .2s ease-in;
+}
+
+input[type=submit] {
+    background-color: #a8dadc;
+    color: #283d3b;
+    border-radius: 4px;
+    margin-top: 10px;
+    padding: 5px 15px;
+    border-bottom: none;
+    font-size: 1.2rem;
+    width: 100%;
+}
+
+input[type=submit]:hover {
+    background-color: #f1faee;
+    font-size: 1.3rem;
+    box-shadow: 0 0 10px rgba(255, 255, 255, .5);
+    transition: .2s ease-in;
+}
+
+#errorMsg {
+    color: rgb(241, 152, 152);
+    font-size: 1.3rem;
+}
+

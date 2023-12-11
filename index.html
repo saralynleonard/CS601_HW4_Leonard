@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MET CS 601 Survey</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/main.js"></script>
+</head>
+<body>
+     <header>
+        <h1>MET CS 601 Survey</h1>
+    </header>
+     <main>
+        <form action="https://cs601.bu-course-examples.com/hw4/380a98f5-5191-496f-8aa1-7acc1da83cc5" method="post" novalidate onsubmit="return validateForm()">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" required>
+            
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" required>
+
+            <label for="facilitator">Facilitator</label>
+            <input type="text" name="facilitator" id="facilitator" required>            
+
+            <p id="radioBtns">
+                <h4>Of the choices below, what is your favorite type of pizza?</h4>
+                <input type="radio" name="radioBtn" value="cheese" checked>Cheese<br>
+                <input type="radio" name="radioBtn" value="pepperoni">Pepperoni<br>
+                <input type="radio" name="radioBtn" value="veggie">Veggie <br>
+            </p>
+
+            <p id="checkBxs">
+                <h4>Of the choices below, what are your favorite activities?</h4>
+                <input type="checkbox" name="cb2" value="art">Art <br>
+                <input type="checkbox" name="cb3" value="exercise">Exercise <br>
+                <input type="checkbox" name="cb1" value="reading">Reading 
+            </p>
+
+            <input type="submit" name="submitBtn" value="Submit">
+            <div id="errorMsg"></div>
+        </form>
+        
+     </main>
+     <script>
+
+     </script>
+
+</body>
+</html>
